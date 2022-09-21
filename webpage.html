@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid grey;
+}
+</style>
+<body>
+
+<h2>Student List</h2> <!-- Ttile of table -->
+<div id="studentInfo">
+  <!-- interactive row adding-->
+  <input type = "text" id = "name" placeholder = "Enter Name">
+  <input type = "text" id = "email" placeholder = "Enter Email">
+  <select name="level" id="level"> <!-- table cell with dropdown menu -->
+    <option value="First">First</option>
+    <option value="Second">Second</option>
+    <option value="Third">Third</option>
+    <option value="Fourth">Fourth</option>
+  </select>
+  <button> Add </button>
+</div>
+
+<table id = "table" style="width:100%">
+  <!-- Headers-->
+  <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Level</th>
+  </tr>
+</table>
+
+<script src = "script.js"></script>
+
+</body>
+</html>
